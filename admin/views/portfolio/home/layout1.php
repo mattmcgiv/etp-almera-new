@@ -135,7 +135,7 @@ $block_html_reverse = false;
                         $t = implode('', $title);
                         ?>
                         <figure class="gr-figure">
-                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo get_grid_image_url($block[0], true) ?>" data-fancybox-group="grid">
+                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo $title_href = (!empty($block[0]['title_href'])) ?  $block[0]['title_href'] : get_permalink($block[0]['id']) ?>" data-fancybox-group="grid">
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*995') ?>" alt="">
                             </a>
 
@@ -210,7 +210,7 @@ $block_html_reverse = false;
                         $t=$block[0]['title'];
                          ?>
                         <figure class="gr-figure">
-                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : ''  ?>" href="<?php echo get_grid_image_url($block[0], true) ?>" data-fancybox-group="grid">
+                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : ''  ?>" href="<?php echo $title_href = (!empty($block[0]['title_href'])) ?  $block[0]['title_href'] : get_permalink($block[0]['id']) ?>" data-fancybox-group="grid">
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*495') ?>" alt="">
                             </a>
 
@@ -272,7 +272,7 @@ $block_html_reverse = false;
                         $t=$block[1]['title'];
                          ?>
                         <figure class="gr-figure">
-                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo get_grid_image_url($block[1], true) ?>" data-fancybox-group="grid">
+                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo $title_href = (!empty($block[1]['title_href'])) ?  $block[1]['title_href'] : get_permalink($block[1]['id']) ?>" data-fancybox-group="grid">
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*495') ?>" alt="">
                             </a>
 
@@ -343,7 +343,7 @@ $block_html_reverse = false;
                         $t=$block[0]['title'];
                          ?>
                         <figure class="gr-figure">
-                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo get_grid_image_url($block[0], true) ?>" data-fancybox-group="grid">
+                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo $title_href = (!empty($block[0]['title_href'])) ?  $block[0]['title_href'] : get_permalink($block[0]['id']) ?>" data-fancybox-group="grid">
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                             </a>
 
@@ -407,7 +407,7 @@ $block_html_reverse = false;
                          ?>
 
                         <figure class="gr-figure">
-                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo get_grid_image_url($block[1], true) ?>" data-fancybox-group="grid">
+                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo $title_href = (!empty($block[1]['title_href'])) ?  $block[1]['title_href'] : get_permalink($block[1]['id']) ?>" data-fancybox-group="grid">
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                             </a>
 
@@ -470,7 +470,7 @@ $block_html_reverse = false;
                         $t=$block[2]['title'];                        
                         ?>
                         <figure class="gr-figure">
-                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo get_grid_image_url($block[2], true) ?>" data-fancybox-group="grid">
+                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo $title_href = (!empty($block[2]['title_href'])) ?  $block[2]['title_href'] : get_permalink($block[2]['id']) ?>" data-fancybox-group="grid">
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*495') ?>" alt="">
                             </a>
 
@@ -543,7 +543,7 @@ $block_html_reverse = false;
                             $t=$block[2]['title'];                                    
                                     ?>
                             <figure class="gr-figure">
-                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo get_grid_image_url($block[2], true) ?>" data-fancybox-group="grid">
+                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo $title_href = (!empty($block[2]['title_href'])) ?  $block[2]['title_href'] : get_permalink($block[2]['id']) ?>" data-fancybox-group="grid">
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*495') ?>" alt="">
                                 </a>
 
@@ -607,7 +607,7 @@ $block_html_reverse = false;
                             $t=$block[0]['title'];                            
                             ?>
                             <figure class="gr-figure">
-                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo get_grid_image_url($block[0], true) ?>" data-fancybox-group="grid">
+                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo $title_href = (!empty($block[0]['title_href'])) ?  $block[0]['title_href'] : get_permalink($block[0]['id']) ?>" data-fancybox-group="grid">
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                                 </a>
 
@@ -672,7 +672,7 @@ $block_html_reverse = false;
                             $t=$block[1]['title'];
                             ?>
                             <figure class="gr-figure">
-                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : ''  ?>" href="<?php echo get_grid_image_url($block[1], true) ?>" data-fancybox-group="grid">
+                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : ''  ?>" href="<?php echo $title_href = (!empty($block[1]['title_href'])) ?  $block[1]['title_href'] : get_permalink($block[1]['id']) ?>" data-fancybox-group="grid">
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                                 </a>
 
@@ -740,7 +740,7 @@ $block_html_reverse = false;
                             $t=$block[0]['title'];
                             ?>
                             <figure class="gr-figure">
-                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : ''  ?>" href="<?php echo get_grid_image_url($block[0], true) ?>" data-fancybox-group="grid">
+                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : ''  ?>" href="<?php echo $title_href = (!empty($block[0]['title_href'])) ?  $block[0]['title_href'] : get_permalink($block[0]['id']) ?>" data-fancybox-group="grid">
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                                 </a>
 
@@ -803,7 +803,7 @@ $block_html_reverse = false;
                             $t=$block[1]['title'];
                              ?>
                             <figure class="gr-figure">
-                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo get_grid_image_url($block[1], true) ?>" data-fancybox-group="grid">
+                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : '' ?>" href="<?php echo $title_href = (!empty($block[1]['title_href'])) ?  $block[1]['title_href'] : get_permalink($block[1]['id']) ?>" data-fancybox-group="grid">
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                                 </a>
 
@@ -866,7 +866,7 @@ $block_html_reverse = false;
                             $t=$block[2]['title'];
                              ?>
                             <figure class="gr-figure">
-                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : ''  ?>" href="<?php echo get_grid_image_url($block[2], true) ?>" data-fancybox-group="grid">
+                                <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : ''  ?>" href="<?php echo $title_href = (!empty($block[2]['title_href'])) ?  $block[2]['title_href'] : get_permalink($block[2]['id']) ?>" data-fancybox-group="grid">
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*495') ?>" alt="">
                                 </a>
 
@@ -935,7 +935,7 @@ $block_html_reverse = false;
                         ?>
 
                         <figure class="gr-figure">
-                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : ''  ?>" href="<?php echo get_grid_image_url($block[3], true) ?>" data-fancybox-group="grid">
+                            <a class="gr-lightbox single-image <?php echo $video_icon ?> plus-icon animTop" title="<?php echo $t=((TMM::get_option('hide_image_titles'))=='0') ? $t : ''  ?>" href="<?php echo $title_href = (!empty($block[3]['title_href'])) ?  $block[3]['title_href'] : get_permalink($block[3]['id']) ?>" data-fancybox-group="grid">
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*995') ?>" alt="">
                             </a>
 
@@ -970,4 +970,3 @@ $block_html_reverse = false;
     </div><!--/ .grid-->
     
 </div><!--/ .scroll-box-->
-
