@@ -589,10 +589,10 @@ body {
 			filter: alpha(opacity = 100);
 		}
 		
-		.animTop:hover .curtain {
+		/*mmm .animTop:hover .curtain {
 			margin: -30px 0 0 -30px;
 			top: 50%;
-		}
+		}*/
 		
 	/* -------------------------------------------------- */
 	/*	Fluid Width Video
