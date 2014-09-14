@@ -594,6 +594,10 @@ body {
 			top: 50%;
 		}*/
 		
+		a.gr-lightbox.single-image.plus-icon.animTop {
+			margin-bottom: 20px;
+		}
+		
 	/* -------------------------------------------------- */
 	/*	Fluid Width Video
 	/* -------------------------------------------------- */

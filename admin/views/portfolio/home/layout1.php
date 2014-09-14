@@ -139,27 +139,7 @@ $block_html_reverse = false;
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*995') ?>" alt="">
                             </a>
 
-                            <a href="<?php echo $title_href = (!empty($block[0]['title_href'])) ?  $block[0]['title_href'] : get_permalink($block[0]['id']) ?>" class="gr-caption">
-
-        <?php if (!empty($title)): ?>
-            <?php foreach ($title as $kk => $value) : ?>										
-                                        <h5><?php echo $value ?></h5>
-                                    <?php endforeach; ?>
-                                <?php endif; ?>
-                                <span><?php
-                        if (!empty($block[0]['categories'])) {
-                            $tmp = explode(',', $block[0]['categories']);
-                            if (!empty($tmp)) {
-                                foreach ($tmp as $kk => $term_id) {
-                                    if ($kk > 0) {
-                                        echo ' / ';
-                                    }
-                                    echo $term_list[$term_id];
-                                }
-                            }
-                        }
-                                ?></span>
-                            </a>
+                            
                         </figure><!--/ .gr-figure-->
 
                     </div><!--/ .item-->
@@ -214,23 +194,7 @@ $block_html_reverse = false;
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*495') ?>" alt="">
                             </a>
 
-                            <a href="<?php echo $title_href = (!empty($block[0]['title_href'])) ?  $block[0]['title_href'] : get_permalink($block[0]['id']) ?>" class="gr-caption">
-                                <h5><?php echo $block[0]['title'] ?></h5>
-                                <span><?php
-                if (!empty($block[0]['categories'])) {
-                    $tmp = explode(',', $block[0]['categories']);
-                    if (!empty($tmp)) {
-                        foreach ($tmp as $kk => $term_id) {
-                            if ($kk > 0) {
-                                echo ' / ';
-                            }
-                            echo $term_list[$term_id];
-                        }
-                    }
-                }
-        ?>
-                                </span>
-                            </a>
+                            
                         </figure><!--/ .gr-figure-->
 
                     </div><!--/ .item-->
@@ -276,23 +240,7 @@ $block_html_reverse = false;
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*495') ?>" alt="">
                             </a>
 
-                            <a href="<?php echo $title_href = (!empty($block[1]['title_href'])) ?  $block[1]['title_href'] : get_permalink($block[1]['id']) ?>" class="gr-caption">
-                                <h5><?php echo $block[1]['title'] ?></h5>
-                                <span><?php
-                        if (!empty($block[1]['categories'])) {
-                            $tmp = explode(',', $block[1]['categories']);
-                            if (!empty($tmp)) {
-                                foreach ($tmp as $kk => $term_id) {
-                                    if ($kk > 0) {
-                                        echo ' / ';
-                                    }
-                                    echo $term_list[$term_id];
-                                }
-                            }
-                        }
-                        ?>
-                                </span>
-                            </a>
+                            
                         </figure><!--/ .gr-figure-->
 
                     </div><!--/ .item-->
@@ -347,23 +295,7 @@ $block_html_reverse = false;
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                             </a>
 
-                            <a href="<?php echo $title_href = (!empty($block[0]['title_href'])) ?  $block[0]['title_href'] : get_permalink($block[0]['id']) ?>" class="gr-caption">
-                                <h5><?php echo $block[0]['title'] ?></h5>
-                                <span><?php
-                        if (!empty($block[0]['categories'])) {
-                            $tmp = explode(',', $block[0]['categories']);
-                            if (!empty($tmp)) {
-                                foreach ($tmp as $kk => $term_id) {
-                                    if ($kk > 0) {
-                                        echo ' / ';
-                                    }
-                                    echo $term_list[$term_id];
-                                }
-                            }
-                        }
-                        ?>
-                                </span>
-                            </a>
+                            
                         </figure><!--/ .gr-figure-->
 
                     </div><!--/ .item-->
@@ -411,23 +343,7 @@ $block_html_reverse = false;
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                             </a>
 
-                            <a href="<?php echo $title_href = (!empty($block[1]['title_href'])) ?  $block[1]['title_href'] : get_permalink($block[1]['id']) ?>" class="gr-caption">
-                                <h5><?php echo $block[1]['title'] ?></h5>
-                                <span><?php
-                        if (!empty($block[1]['categories'])) {
-                            $tmp = explode(',', $block[1]['categories']);
-                            if (!empty($tmp)) {
-                                foreach ($tmp as $kk => $term_id) {
-                                    if ($kk > 0) {
-                                        echo ' / ';
-                                    }
-                                    echo $term_list[$term_id];
-                                }
-                            }
-                        }
-                        ?>
-                                </span>
-                            </a>
+                            
                         </figure><!--/ .gr-figure-->
 
                     </div><!--/ .item-->
@@ -474,23 +390,7 @@ $block_html_reverse = false;
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*495') ?>" alt="">
                             </a>
 
-                            <a href="<?php echo $title_href = (!empty($block[2]['title_href'])) ?  $block[2]['title_href'] : get_permalink($block[2]['id']) ?>" class="gr-caption">
-                                <h5><?php echo $block[2]['title'] ?></h5>
-                                <span><?php
-                        if (!empty($block[2]['categories'])) {
-                            $tmp = explode(',', $block[2]['categories']);
-                            if (!empty($tmp)) {
-                                foreach ($tmp as $kk => $term_id) {
-                                    if ($kk > 0) {
-                                        echo ' / ';
-                                    }
-                                    echo $term_list[$term_id];
-                                }
-                            }
-                        }
-                        ?>
-                                </span>
-                            </a>
+                            
                         </figure><!--/ .gr-figure-->
 
                     </div><!--/ .item-->
@@ -547,24 +447,7 @@ $block_html_reverse = false;
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*495') ?>" alt="">
                                 </a>
 
-                                <a href="<?php echo $title_href = (!empty($block[2]['title_href'])) ?  $block[2]['title_href'] : get_permalink($block[2]['id']) ?>" class="gr-caption">
-                                    
-                                    <h5><?php echo $block[2]['title'] ?></h5>
-                                    <span><?php
-                            if (!empty($block[2]['categories'])) {
-                                $tmp = explode(',', $block[2]['categories']);
-                                if (!empty($tmp)) {
-                                    foreach ($tmp as $kk => $term_id) {
-                                        if ($kk > 0) {
-                                            echo ' / ';
-                                        }
-                                        echo $term_list[$term_id];
-                                    }
-                                }
-                            }
-                            ?>
-                                    </span>
-                                </a>
+                               
                             </figure><!--/ .gr-figure-->
 
                         </div><!--/ .item-->
@@ -611,24 +494,7 @@ $block_html_reverse = false;
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                                 </a>
 
-                                <a href="<?php echo $title_href = (!empty($block[0]['title_href'])) ?  $block[0]['title_href'] : get_permalink($block[0]['id']) ?>" class="gr-caption">
-                                    
-                                    <h5><?php echo $block[0]['title'] ?></h5>
-                                    <span><?php
-                            if (!empty($block[0]['categories'])) {
-                                $tmp = explode(',', $block[0]['categories']);
-                                if (!empty($tmp)) {
-                                    foreach ($tmp as $kk => $term_id) {
-                                        if ($kk > 0) {
-                                            echo ' / ';
-                                        }
-                                        echo $term_list[$term_id];
-                                    }
-                                }
-                            }
-                            ?>
-                                    </span>
-                                </a>
+                                
                             </figure><!--/ .gr-figure-->
 
                         </div><!--/ .item-->
@@ -676,23 +542,7 @@ $block_html_reverse = false;
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                                 </a>
 
-                                <a href="<?php echo $title_href = (!empty($block[1]['title_href'])) ?  $block[1]['title_href'] : get_permalink($block[1]['id']) ?>" class="gr-caption">
-                                    <h5><?php echo $block[1]['title'] ?></h5>
-                                    <span><?php
-                            if (!empty($block[1]['categories'])) {
-                                $tmp = explode(',', $block[1]['categories']);
-                                if (!empty($tmp)) {
-                                    foreach ($tmp as $kk => $term_id) {
-                                        if ($kk > 0) {
-                                            echo ' / ';
-                                        }
-                                        echo $term_list[$term_id];
-                                    }
-                                }
-                            }
-                            ?>
-                                    </span>
-                                </a>
+                               
                             </figure><!--/ .gr-figure-->
 
                         </div><!--/ .item-->					
@@ -744,23 +594,7 @@ $block_html_reverse = false;
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                                 </a>
 
-                                <a href="<?php echo $title_href = (!empty($block[0]['title_href'])) ?  $block[0]['title_href'] : get_permalink($block[0]['id']) ?>" class="gr-caption">
-                                    <h5><?php echo $block[0]['title'] ?></h5>
-                                    <span><?php
-                            if (!empty($block[0]['categories'])) {
-                                $tmp = explode(',', $block[0]['categories']);
-                                if (!empty($tmp)) {
-                                    foreach ($tmp as $kk => $term_id) {
-                                        if ($kk > 0) {
-                                            echo ' / ';
-                                        }
-                                        echo $term_list[$term_id];
-                                    }
-                                }
-                            }
-                            ?>
-                                    </span>
-                                </a>
+                                
                             </figure><!--/ .gr-figure-->
 
                         </div><!--/ .item-->
@@ -807,23 +641,7 @@ $block_html_reverse = false;
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '495*495') ?>" alt="">
                                 </a>
 
-                                <a href="<?php echo $title_href = (!empty($block[1]['title_href'])) ?  $block[1]['title_href'] : get_permalink($block[1]['id']) ?>" class="gr-caption">
-                                    <h5><?php echo $block[1]['title'] ?></h5>
-                                    <span><?php
-                            if (!empty($block[1]['categories'])) {
-                                $tmp = explode(',', $block[1]['categories']);
-                                if (!empty($tmp)) {
-                                    foreach ($tmp as $kk => $term_id) {
-                                        if ($kk > 0) {
-                                            echo ' / ';
-                                        }
-                                        echo $term_list[$term_id];
-                                    }
-                                }
-                            }
-                            ?>
-                                    </span>
-                                </a>
+                               
                             </figure><!--/ .gr-figure-->
 
                         </div><!--/ .item-->
@@ -870,23 +688,7 @@ $block_html_reverse = false;
                                     <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*495') ?>" alt="">
                                 </a>
 
-                                <a href="<?php echo $title_href = (!empty($block[2]['title_href'])) ?  $block[2]['title_href'] : get_permalink($block[2]['id']) ?>" class="gr-caption">
-                                    <h5><?php echo $block[2]['title'] ?></h5>
-                                    <span><?php
-                            if (!empty($block[2]['categories'])) {
-                                $tmp = explode(',', $block[2]['categories']);
-                                if (!empty($tmp)) {
-                                    foreach ($tmp as $kk => $term_id) {
-                                        if ($kk > 0) {
-                                            echo ' / ';
-                                        }
-                                        echo $term_list[$term_id];
-                                    }
-                                }
-                            }
-                            ?>
-                                    </span>
-                                </a>
+                                
                             </figure><!--/ .gr-figure-->
 
                         </div><!--/ .item-->
@@ -939,23 +741,7 @@ $block_html_reverse = false;
                                 <img <?php if ($slideup=='1'){ ?> class="slideup" <?php } ?> src="<?php echo TMM_Helper::resize_image($th_url, '995*995') ?>" alt="">
                             </a>
 
-                            <a href="<?php echo $title_href = (!empty($block[3]['title_href'])) ?  $block[3]['title_href'] : get_permalink($block[3]['id']) ?>" class="gr-caption">
-                                <h5><?php echo $block[3]['title'] ?></h5>
-                                <span><?php
-                            if (!empty($block[3]['categories'])) {
-                                $tmp = explode(',', $block[3]['categories']);
-                                if (!empty($tmp)) {
-                                    foreach ($tmp as $kk => $term_id) {
-                                        if ($kk > 0) {
-                                            echo ' / ';
-                                        }
-                                        echo $term_list[$term_id];
-                                    }
-                                }
-                            }
-                        ?>
-                                </span>
-                            </a>
+         
                         </figure><!--/ .gr-figure-->
 
                     </div><!--/ .item-->
