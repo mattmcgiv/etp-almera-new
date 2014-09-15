@@ -1701,14 +1701,14 @@
     /* ---------------------------------------------------- */
 
     function touchHandler(e) {
-        var target = $(e.currentTarget);
+        /*var target = $(e.currentTarget);
         if (target.hasClass('active')) {
             target.removeClass('active');
             return true;
         } else {
             target.addClass('active');
             return false;
-        }
+        }*/
     }
 
     /* end Touch Handler */
